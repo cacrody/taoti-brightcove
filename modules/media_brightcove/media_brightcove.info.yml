@@ -1,0 +1,9 @@
+name: Media Brightcove
+description: Provides a "Brightcove Video" media source.
+type: module
+core_version_requirement: ^8 || ^9
+package: Brightcove
+dependencies:
+  - drupal:media
+  - brightcove:brightcove
+  - drupal:system (>=8.4.0)

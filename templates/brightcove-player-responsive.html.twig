@@ -1,0 +1,37 @@
+{#
+/**
+ * @file brightcove-video-player.html.twig
+ * Default theme implementation to display Brightcove video player.
+ *
+ * This template is used when dispalying the Brightcove video player.
+ *
+ * Available variables:
+ *   - account (string): Account ID.
+ *   - data_usage (string): Module version indicator.
+ *   - embed (string): Parent/child relationship, where parent is always
+ *                     default, and child players has the ID of the parent player.
+ *   - id (int): ID of the Brightcove video or playlist.
+ *   - is_playlist (bool): Indicates whether it is a playlist player or a single video player.
+ *   - player (string): Player ID.
+ *   - type (string): The type of the player, playlist or video.
+ *   - video_id (string): Video ID.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="brightcove-player sizing-responsive">
+  <div style="max-width: {{- max_width ~ units -}};">
+    <video-js class="vjs-fluid"
+      controls=""
+      data-account="{{- account -}}"
+      data-embed="{{- embed -}}"
+      data-player="{{- player -}}"
+      data-usage="{{- data_usage -}}"
+      data-{{- type -}}-id="{{- id -}}"
+    ></video-js>
+  </div>
+  {% if is_playlist %}
+    <ol class="vjs-playlist"></ol>
+  {% endif %}
+  <script src="//players.brightcove.net/{{- account -}}/{{- player -}}_{{- embed -}}/index.min.js"></script>
+</div>

@@ -1,0 +1,10 @@
+name: Media Entity Brightcove
+description: Allows you to add a "Brightcove Video" entity media type.
+type: module
+core_version_requirement: ^8 || ^9
+hidden: true
+package: Brightcove
+dependencies:
+  - drupal:media
+  - brightcove:brightcove
+  - drupal:system (>=8.4.0)

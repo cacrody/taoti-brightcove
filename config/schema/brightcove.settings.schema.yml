@@ -1,0 +1,16 @@
+brightcove.settings:
+  type: config_object
+  label: 'Settings'
+  mapping:
+    defaultAPIClient:
+      type: string
+      label: 'Default API Client'
+    notification:
+      type: mapping
+      mapping:
+        callbackExpirationTime:
+          type: integer
+          label: 'Callback expiration time'
+    disable_cron:
+      type: integer
+      label: 'Disable'

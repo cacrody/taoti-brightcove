@@ -1,0 +1,8 @@
+name: Brightcove Proxy
+description: Proxy configuration for Brightcove Video Connect.
+type: module
+core_version_requirement: ^8 || ^9
+package: Brightcove
+configure: brightcove_proxy.config_form
+dependencies:
+  - brightcove:brightcove

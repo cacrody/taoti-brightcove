@@ -1,0 +1,11 @@
+{
+    "name": "taoti/brightcove",
+    "description": "Modified brightcove Drupal module for Drupal 9.",
+    "type": "drupal-module",
+    "homepage": "https://github.com/taoti/nareit-brightcove-d9",
+    "license": "GPL-2.0+",
+    "authors": [],
+    "require": {
+        "brightcove/api": "~2.1"
+    }
+}
